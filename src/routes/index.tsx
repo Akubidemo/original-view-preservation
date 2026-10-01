@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import logoAsset from "@/assets/tsi-logo.png.asset.json";
 import heroDesk from "@/assets/hero-desk.jpg";
 import countersOffice from "@/assets/counters-office.jpg";
 import cityBali from "@/assets/city-bali.jpg";
@@ -39,16 +40,8 @@ const NAV = [
 
 function Wordmark({ tone = "dark" }: { tone?: "dark" | "light" }) {
   return (
-    <span
-      className={`inline-flex items-center text-2xl font-extrabold tracking-[0.08em] ${
-        tone === "light" ? "text-ink-foreground" : "text-foreground"
-      }`}
-    >
-      <svg viewBox="0 0 24 24" className="mr-[2px] h-6 w-5" aria-hidden="true">
-        <path d="M12 3 L22 21 H2 Z" fill="currentColor" />
-        <path d="M12 9 L17 21 H7 Z" className="fill-teal" />
-      </svg>
-      TSI
+    <span className={`inline-flex items-center ${tone === "light" ? "rounded-sm bg-background px-2 py-1" : ""}`}>
+      <img src={logoAsset.url} alt="PT Teropong Sukses Investama" className="h-12 w-auto" />
     </span>
   );
 }
