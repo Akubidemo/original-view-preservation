@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import logoAsset from "@/assets/tsi-logo.png.asset.json";
 import heroDesk from "@/assets/hero-desk.jpg";
 import countersOffice from "@/assets/counters-office.jpg";
 import cityBali from "@/assets/city-bali.jpg";
